@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    2018嗨起来
+    外部页面
     <p></p>
   </div>
 </template>
@@ -12,6 +12,12 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted () {
+    alert(1)
+    alert(myCallback)
+    ref.close();
+    console.log(myCallback)
   }
 }
 </script>
