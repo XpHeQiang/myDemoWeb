@@ -2,6 +2,7 @@
   <div class="hello">
     外部页面
     <p></p>
+    <button @click="avb"></button>
   </div>
 </template>
 
@@ -15,9 +16,11 @@ export default {
   },
   mounted () {
     alert(1)
-    alert(myCallback)
-    ref.close();
-    console.log(myCallback)
+  },
+  methods: {
+    avb(){
+      window.location.href = "http://www.baidu.com";
+    }
   }
 }
 </script>
